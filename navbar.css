@@ -12,6 +12,18 @@ button{
     
 }
 
+
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in;
+}
+
+/*Toggle class */
+.show-links{
+    height: 10rem;
+}
+
 .toggle{
     display: flex;
     justify-content: space-between;
@@ -23,11 +35,15 @@ transition:0.3s ease-in ;
 }
 
 h2{
-    text-shadow: 0 0 5px black;
+
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 34px;
 letter-spacing: 3px;
 padding-bottom: 30px;
+background: linear-gradient(45deg, #00bfff, #005eff); /* Blueish gradient */
+-webkit-background-clip: text; /* Clip the background to the text */
+-webkit-text-fill-color: transparent;
+background-clip: text;
 }
 
 a{
@@ -36,7 +52,7 @@ a{
     padding: 10px;
 }
 
-.links{
+.links, .show-links{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -51,11 +67,15 @@ a{
     nav{
         background-color: white;
         border-bottom: 2px solid rgb(0, 0, 0,0.3);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 12px 14px rgba(0, 0, 0, 0.4);
         margin: -10px;
         padding-left: 20px;
     }
 
     body{
         background-color:#9BB0C1;
+    }
+
+    li{
+        list-style: none;
     }
